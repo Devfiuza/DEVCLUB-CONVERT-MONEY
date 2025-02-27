@@ -10,7 +10,7 @@ function convertValues() {
   const currencyValueToConvert=document.querySelector(".currency-value-to-convert")
   const currencyValueConverted =document.querySelector(".currency-value"); //outras moedas
 
-  const dolarToday = 5.2;
+  const dolarToday = 5.8;
   const eurotoday=6.2
 
   const convertedValue = inputCurrencyValue / dolarToday;
