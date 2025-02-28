@@ -7,7 +7,7 @@ function convertValues() {
 
   const currencyValueToConvert = document.querySelector(
     ".currency-value-to-convert"
-  );
+  )
   const currencyValueConverted = document.querySelector(".currency-value"); //outras moedas
 
   console.log(currencySelect.value);
@@ -42,6 +42,7 @@ function changeCurrency() {
   currencyName.innerHTML="Euro"
 
 }
+}
 
-currencySelect.addEventListener("change",changeCurrency);
-convertButton.addEventListener("click", convertValues);
+currencySelect.addEventListener("change", changeCurrency);
+convertButton.addEventListener("click", convertValues)
