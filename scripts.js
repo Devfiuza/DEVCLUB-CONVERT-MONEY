@@ -35,11 +35,20 @@ function convertValues() {
 
 function changeCurrency() {
  const currencyName =document.getElementById("currency-name")
+ const currencyImage=document.querySelector(".currency-img")
+
  if(currencySelect.value=="dolar") {
   currencyName.innerHTML="Dólar americano"
+  
+ 
+  
+ 
  }
+
   if(currencySelect.value=="euro") {
   currencyName.innerHTML="Euro"
+  
+  
 
 }
 }
