@@ -65,7 +65,7 @@ function changeCurrency() {
 }
 if(currencySelect.value=="libra") {
   currencyName.innerHTML="Libra"
-  currencyImage.src="./assets/libra.png"
+  currencyImage.src="./libra.png"
   }
   if(currencySelect.value=="bitcoin") {
     currencyName.innerHTML="Bitcoin"
