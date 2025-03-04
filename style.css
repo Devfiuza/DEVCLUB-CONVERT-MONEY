@@ -86,7 +86,7 @@ align-items: center;
   color: #777777;  
   font-size:14px ;
 }
-.currency-value,.currency-value-to-convert{
+.currency-value,.currency-value-to-convert,.currency-convert-from{
     color: #555555;
     font-weight: 700;
     font-size: 20px;

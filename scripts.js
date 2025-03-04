@@ -1,20 +1,22 @@
 const convertButton = document.querySelector(".convert-button");
 const currencySelect = document.querySelector(".currency-select");
+const selectConvertFrom=document.querySelector(".currency-convert-from")
+
 
 function convertValues() {
 
   const inputCurrencyValue = document.querySelector(".input-currency").value;
 
-  const currencyValueToConvert = document.querySelector(
-    ".currency-value-to-convert"
-  )
+  const currencyValueToConvert = document.querySelector(".currency-value-to-convert" )
   const currencyValueConverted = document.querySelector(".currency-value"); //outras moedas
 
-  console.log(currencySelect.value);
-  const dolarToday = 5.2
+  
+  const dolarToday = 5.2 
   const euroToday = 6.2
   const libraToday=7.4
   const bitcoinToday=523.298
+  const realToday=3.2
+  
 
   if (currencySelect.value == "dolar") {
     currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -50,27 +52,62 @@ function convertValues() {
 
 function changeCurrency() {
  const currencyName =document.getElementById("currency-name")
+ const nameToconvert=document.getElementById("name-to-convert")
  const currencyImage=document.querySelector(".currency-img")
+ const currencyImg=document.querySelector(".currency-image")
 
  if(currencySelect.value=="dolar") {
-  currencyName.innerHTML="Dólar americano"
+  nameToconvert.innerHTML="Dólar americano"
   currencyImage.src="./assets/dolar.png"
  
  }
 
   if(currencySelect.value=="euro") {
-  currencyName.innerHTML="Euro"
+    nameToconvert.innerHTML="Euro"
   currencyImage.src="./assets/euro.png"
   
 }
+
 if(currencySelect.value=="libra") {
-  currencyName.innerHTML="Libra"
+  nameToconvert.innerHTML="Libra"
   currencyImage.src="./libra.png"
   }
   if(currencySelect.value=="bitcoin") {
-    currencyName.innerHTML="Bitcoin"
+    nameToconvert.innerHTML="Bitcoin"
     currencyImage.src="./assets/bitcoin.png"
 }
+
+if(currencySelect.value=="real") {
+  nameToconvert.innerHTML="Real brasileiro"
+  currencyImage.src="./real.png"
+}
+
+if(selectConvertFrom.value=="Real") {
+  nameToconvert.innerHTML="Real brasileiro"
+  currencyImg.src="./real.png"
+ 
+ }
+
+  if(selectConvertFrom.value=="Dolar") {
+  currencyName.innerHTML="Dolar"
+  currencyImg.src="./assets/dolar.png"
+  
+}
+
+if(selectConvertFrom.value=="Euro") {
+  currencyName.innerHTML="Euro"
+  currencyImg.src="./euro.png"
+  }
+
+  if(selectConvertFrom.value=="Libra") {
+    currencyName.innerHTML="Libra"
+    currencyImg.src="./assets/libra.png"
+}
+
+if(selectConvertFrom.value=="Bitcoin") {
+  currencyName.innerHTML="Bitcoin"
+  currencyImg.src="./bitcoin.png"
+
 convertValues()
 }
 
